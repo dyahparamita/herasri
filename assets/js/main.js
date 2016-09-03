@@ -4,6 +4,15 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+head = $('header');
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100) {
+    return head.addClass('fill');
+  } else {
+    return head.removeClass('fill');
+   
+}); 
+
 (function($) {
 
 	skel.breakpoints({
